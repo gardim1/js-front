@@ -40,3 +40,32 @@ var media_av = curso.media_aval().toFixed(2);
 
 document.getElementById("media_aval").innerHTML = media_av;
 document.getElementById("total_aval").innerHTML = total_av;
+
+//
+//
+//
+//
+var pessoa = {
+  nome: "Marina",
+  sobrenome: "Lopes",
+  email: "mlopes@email.com",
+};
+
+function criar_tabela(person) {
+  var tabelaHTML = '<div class="tableBox">';
+  tabelaHTML += "<table>";
+  tabelaHTML += "<tr>";
+  tabelaHTML += "<th>Nome Completo</th>";
+  tabelaHTML += "<th>Email</th>";
+  tabelaHTML += "</tr>";
+  tabelaHTML += "<tr>";
+  tabelaHTML += "<td>" + person.nome + " " + person.sobrenome + "</td>";
+  tabelaHTML += "<td>" + person.email + "</td>";
+  tabelaHTML += "</tr>";
+  tabelaHTML += "</table>";
+  tabelaHTML += "</div>";
+  return tabelaHTML;
+}
+
+var tabela = criar_tabela(pessoa);
+document.getElementById("tabela").innerHTML = tabela;
