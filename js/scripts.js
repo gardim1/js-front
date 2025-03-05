@@ -35,6 +35,38 @@
 // console.log(exemplo);
 // console.log(element);
 
-var exemplo = document.getElementsByTagName("p");
+// var exemplo = document.getElementsByTagName("p");
 
-console.log(exemplo);
+// console.log(exemplo);
+
+for (var a = 0; a < 5; a++) {
+  console.log(a);
+}
+
+var alunos = ["Pedro", "Maria", "José", "João", "Carlos"];
+
+for (var b = 0; b < alunos.length; b++) {
+  console.log(alunos[b]);
+}
+
+var carro = {
+  Ano: 2018,
+  Modelo: "Fox",
+  Cilindradas: "1.8",
+  Combustível: "Gasolina",
+};
+
+for (var prop in carro) {
+  console.log(prop + ": " + carro[prop]);
+}
+
+var exemplo2 = document.getElementsByTagName("p");
+
+// for (var i = 0; i < exemplo2.length; i++) {
+//   exemplo2[i].innerHTML = `teste ${[i + 1]}`;
+// }
+
+for (var j = 0; j < exemplo2.length; j++) {
+  exemplo2[j].style.color = "green";
+  exemplo2[j].style["font-weight"] = "bold";
+}
