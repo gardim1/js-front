@@ -1,21 +1,40 @@
-var aluno = {
-  nome: "Maria",
-  sobrenome: "Pereira",
-  ano_nasc: 1982,
-  idade: function () {
-    var idadeAluno = 2025 - this.ano_nasc;
-    return idadeAluno;
-  },
-  nome_completo: function () {
-    var nomeCompleto = this.nome + " " + this.sobrenome;
-    return nomeCompleto;
-  },
-};
+// document.getElementById("click-me").onclick = function () {
+//   alert("Voce cliclou no meu botao");
+// };
 
-console.log(aluno.nome_completo());
-console.log(aluno.idade());
+// document.getElementById("hover-me").onmouseover = function () {
+//   alert("Voce passpu o mouse no meu botao");
+// };
+// document.getElementById("leave-me").onmouseleave = function () {
+//   alert("Voce tirou o mouse do meu botao");
+// };
 
-console.log(console);
-console.log(Math.round(3.7));
+// document.onkeydown = function () {
+//   if (event.keyCode == 65) {
+//     alert("Voce apertou a tecla A");
+//   }
+// };
 
-console.log(document.getElementById("tudo_obj").innerHTML);
+// function button_clicked() {
+//   alert("voce cliclou no botao");
+// }
+
+// document.getElementById("botao_cor").onclick = function () {
+//   this.style["background-color"] = "purple";
+//   this.style.transform = "translateX(100px)";
+// };
+
+// var exemplo = document.getElementsByClassName("exemplo");
+
+// exemplo[0].innerHTML = "teste 1";
+
+// for (let i = 0; i < exemplo.length; i++) {
+//   exemplo[i].innerHTML = `teste ${[i]}`;
+// }
+
+// console.log(exemplo);
+// console.log(element);
+
+var exemplo = document.getElementsByTagName("p");
+
+console.log(exemplo);
